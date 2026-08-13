@@ -624,48 +624,7 @@
 
     <!-- ================= BOTTOM COLLAPSE ================= -->
 
-    <div style="
-        position:fixed;
-        bottom:0;
-        left:0;
-        width:250px;
-        height:60px;
-        background:#062653;
-        border-top:1px solid rgba(255,255,255,.12);
-        display:flex;
-        align-items:center;
-        padding:0 22px;
-        box-sizing:border-box;
-        z-index:10000;
-     ">
 
-        <button type="button"
-                id="collapseMenu"
-                style="
-                    width:100%;
-                    height:50px;
-                    display:flex;
-                    align-items:center;
-                    background:none;
-                    border:0;
-                    color:#fff;
-                    cursor:pointer;
-                    font-size:14px;
-                    font-weight:500;
-                    padding:0;
-                ">
-
-            <i class="bi bi-chevron-double-left"
-               style="
-                    font-size:18px;
-                    margin-right:18px;
-                "></i>
-
-            Collapse Menu
-
-        </button>
-
-    </div>
 
 </div>
 

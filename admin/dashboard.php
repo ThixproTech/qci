@@ -9,6 +9,7 @@ require_once "includes/auth.php";
 
 <!-- MAIN CONTENT -->
 <div class="main"
+    
      style="
         margin-left:215px;
         min-height:100vh;
@@ -17,6 +18,7 @@ require_once "includes/auth.php";
         box-sizing:border-box;
         font-family:Arial,Helvetica,sans-serif;
      ">
+     <?php include "includes/navbar.php"; ?>
 
     <!-- CONTENT -->
     <div class="content"
@@ -58,7 +60,7 @@ require_once "includes/auth.php";
             </div>
 
 
-            <div class="d-flex flex-wrap"
+            <div class="d-flex"
                  style="gap:10px;">
 
                 <button type="button"
@@ -235,7 +237,7 @@ require_once "includes/auth.php";
                         <div>
 
                             <div style="
-                                font-size:11px;
+                                font-size:9px;
                                 color:#33415e;
                                 white-space:nowrap;
                             ">
@@ -387,7 +389,7 @@ require_once "includes/auth.php";
                         <div>
 
                             <div style="
-                                font-size:11px;
+                                font-size:9px;
                                 color:#33415e;
                                 white-space:nowrap;
                             ">
@@ -463,7 +465,7 @@ require_once "includes/auth.php";
                         <div>
 
                             <div style="
-                                font-size:11px;
+                                font-size:10px;
                                 color:#33415e;
                                 white-space:nowrap;
                             ">
@@ -539,7 +541,7 @@ require_once "includes/auth.php";
                         <div>
 
                             <div style="
-                                font-size:11px;
+                                font-size:10px;
                                 color:#33415e;
                                 white-space:nowrap;
                             ">
