@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1e293b;
+}
+
+/* --------------------------------
+           HEADER
+        -------------------------------- */
+
+.main-header {
+    height: 84px;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #eef2f7;
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* --------------------------------
+           LOGO
+        -------------------------------- */
+
+.logo-symbol {
+    width: 52px;
+    height: 52px;
+    border: 9px solid #1495d1;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-symbol::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+.logo-symbol::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background: #162b4d;
+    transform: rotate(45deg);
+    bottom: -10px;
+    left: 4px;
+    clip-path: polygon(0 0,
+            100% 0,
+            50% 100%);
+}
+
+.logo-qci {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #17233b;
+    margin-top: 1px;
+}
+
+/* --------------------------------
+           NAVIGATION
+        -------------------------------- */
+
+.nav-link {
+    position: relative;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 31px 0;
+}
+
+.nav-link:hover {
+    color: #1559c7;
+}
+
+.nav-link.active {
+    color: #1559c7;
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background: #1559c7;
+}
+
+/* --------------------------------
+           BUTTONS
+        -------------------------------- */
+
+.login-btn {
+    height: 44px;
+    padding: 0 18px;
+    border: 1px solid #7fb0ff;
+    border-radius: 8px;
+    color: #1559c7;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #eff6ff;
+    border-color: #1559c7;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.12);
+}
+
+.register-btn {
+    height: 44px;
+    padding: 0 19px;
+    background: linear-gradient(135deg,
+            #1768dc,
+            #0d50b8);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: 1px solid #145ac8;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.16);
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(37, 99, 235, 0.25);
+    background: linear-gradient(135deg,
+            #1d73ed,
+            #0c4aa9);
+}
+
+/* --------------------------------
+           MOBILE MENU
+        -------------------------------- */
+
+.mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.mobile-menu.show {
+    max-height: 600px;
+}
+
+/* --------------------------------
+           HERO
+        -------------------------------- */
+
+.hero-section {
+    background:
+        radial-gradient(circle at 10% 20%,
+            rgba(37, 99, 235, 0.08),
+            transparent 30%),
+        radial-gradient(circle at 90% 80%,
+            rgba(14, 165, 233, 0.07),
+            transparent 30%);
+}
+
+/* --------------------------------
+           RESPONSIVE
+        -------------------------------- */
+
+@media (max-width: 1024px) {
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .login-btn,
+    .register-btn {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .main-header {
+        height: 72px;
+    }
+
+    .logo-symbol {
+        width: 43px;
+        height: 43px;
+        border-width: 7px;
+    }
+
+    .logo-qci {
+        font-size: 14px;
+    }
+
+    .logo-title {
+        font-size: 13px !important;
+    }
+
+    .logo-subtitle {
+        font-size: 8px !important;
+    }
+
+}

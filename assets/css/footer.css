@@ -1,0 +1,673 @@
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+#main-footer {
+
+    position: relative;
+
+    overflow: hidden;
+
+    color: #ffffff;
+
+    background:
+        radial-gradient(circle at 10% 20%,
+            rgba(37, 99, 235, 0.18),
+            transparent 28%),
+        radial-gradient(circle at 90% 80%,
+            rgba(14, 116, 144, 0.12),
+            transparent 30%),
+        linear-gradient(135deg,
+            #062d5a 0%,
+            #073665 45%,
+            #052c57 100%);
+
+    font-family:
+        'Inter',
+        sans-serif;
+
+}
+
+
+/* =========================================
+   TOP GLOW
+========================================= */
+
+.footer-top-glow {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background:
+        linear-gradient(90deg,
+            transparent,
+            #38bdf8,
+            #2563eb,
+            #38bdf8,
+            transparent);
+
+    opacity: 0.8;
+
+}
+
+
+/* =========================================
+   FOOTER ABOUT
+========================================= */
+
+.footer-about {
+
+    padding-right: 25px;
+
+}
+
+
+.footer-brand-row {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+}
+
+
+/* =========================================
+   QCI LOGO
+========================================= */
+
+.footer-logo {
+
+    flex-shrink: 0;
+
+    display: block;
+
+    width: 75px;
+
+}
+
+
+.qci-logo {
+
+    position: relative;
+
+    width: 70px;
+    height: 70px;
+
+}
+
+
+.qci-ring {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    transform: rotate(-45deg);
+
+}
+
+
+/*
+   These create a stylized QCI-inspired
+   geometric logo.
+*/
+
+.ring-one {
+
+    left: 8px;
+    top: 3px;
+
+    width: 52px;
+    height: 52px;
+
+    border: 9px solid #00a9e8;
+
+    border-right-color: transparent;
+
+}
+
+
+.ring-two {
+
+    left: 14px;
+    top: 14px;
+
+    width: 40px;
+    height: 40px;
+
+    border: 8px solid #ffffff;
+
+    border-left-color: transparent;
+
+}
+
+
+.ring-three {
+
+    left: 22px;
+    top: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    border: 7px solid #0069b4;
+
+    border-bottom-color: transparent;
+
+}
+
+
+.qci-text {
+
+    position: absolute;
+
+    left: 10px;
+    bottom: -2px;
+
+    width: 52px;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    text-align: center;
+
+}
+
+
+/* =========================================
+   ABOUT TEXT
+========================================= */
+
+.footer-about-text {
+
+    max-width: 170px;
+
+    margin: 5px 0 0;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   SOCIAL LINKS
+========================================= */
+
+.footer-socials {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 18px;
+
+}
+
+
+.social-link {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+.social-link:hover {
+
+    transform: translateY(-4px);
+
+    border-color: #60a5fa;
+
+    background: #2563eb;
+
+}
+
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.footer-column {
+
+    position: relative;
+
+}
+
+
+.footer-column h3,
+.footer-newsletter h3 {
+
+    margin: 3px 0 13px;
+
+    color: #ffffff;
+
+    font-family:
+        'Plus Jakarta Sans',
+        'Inter',
+        sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+.footer-column ul {
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+
+}
+
+
+.footer-column li {
+
+    margin-bottom: 8px;
+
+}
+
+
+.footer-column a {
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        padding-left 0.25s ease;
+
+}
+
+
+.footer-column a:hover {
+
+    padding-left: 4px;
+
+    color: #ffffff;
+
+}
+
+
+/* =========================================
+   NEWSLETTER
+========================================= */
+
+.footer-newsletter {
+
+    position: relative;
+
+}
+
+
+.footer-newsletter p {
+
+    max-width: 210px;
+
+    margin: 0 0 12px;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 12px;
+
+    line-height: 1.55;
+
+}
+
+
+/* =========================================
+   NEWSLETTER INPUT
+========================================= */
+
+.newsletter-form {
+
+    width: 100%;
+
+}
+
+
+.newsletter-input-wrapper {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    height: 36px;
+
+    border-radius: 4px;
+
+    background: #ffffff;
+
+}
+
+
+.newsletter-input-wrapper svg {
+
+    position: absolute;
+
+    left: 9px;
+
+    color: #94a3b8;
+
+}
+
+
+.newsletter-input-wrapper input {
+
+    width: 100%;
+
+    height: 100%;
+
+    padding: 0 10px 0 30px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 4px;
+
+    color: #334155;
+
+    background: transparent;
+
+    font-size: 11px;
+
+}
+
+
+.newsletter-input-wrapper input::placeholder {
+
+    color: #94a3b8;
+
+}
+
+
+/* =========================================
+   SUBSCRIBE BUTTON
+========================================= */
+
+.newsletter-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    min-width: 108px;
+
+    height: 36px;
+
+    margin-top: 10px;
+
+    padding: 0 15px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(135deg,
+            #2563eb,
+            #1d4ed8);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.newsletter-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.3);
+
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 46px;
+
+    border-top: 1px solid rgba(147, 197, 253, 0.18);
+
+    text-align: center;
+
+}
+
+
+.footer-bottom p {
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1023px) {
+
+    .footer-about {
+
+        padding-right: 0;
+
+    }
+
+
+    .footer-brand-row {
+
+        max-width: 350px;
+
+    }
+
+}
+
+
+@media (max-width: 639px) {
+
+    #main-footer {
+
+        text-align: left;
+
+    }
+
+
+    .footer-brand-row {
+
+        gap: 14px;
+
+    }
+
+
+    .footer-about-text {
+
+        max-width: 230px;
+
+    }
+
+
+    .footer-socials {
+
+        margin-top: 15px;
+
+    }
+
+
+    .footer-column h3,
+    .footer-newsletter h3 {
+
+        font-size: 14px;
+
+    }
+
+
+    .footer-bottom {
+
+        min-height: 55px;
+
+        padding: 12px 10px;
+
+    }
+
+
+    .footer-bottom p {
+
+        font-size: 11px;
+
+        line-height: 1.5;
+
+    }
+
+}
+
+/* =========================================
+   COMING SOON POPUP
+========================================= */
+
+.coming-soon-popup {
+
+    width: 390px !important;
+
+    border-radius: 18px !important;
+
+    padding: 30px 25px !important;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 25px 60px rgba(15, 23, 42, 0.18) !important;
+
+}
+
+
+/* Title */
+
+.coming-soon-title {
+
+    color: #0f2f5f !important;
+
+    font-size: 24px !important;
+
+    font-weight: 800 !important;
+
+}
+
+
+/* Button */
+
+.coming-soon-button {
+
+    min-width: 100px;
+
+    border-radius: 7px !important;
+
+    padding: 10px 22px !important;
+
+    font-size: 13px !important;
+
+    font-weight: 700 !important;
+
+    box-shadow:
+        0 5px 15px rgba(37, 99, 235, 0.22);
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    .coming-soon-popup {
+
+        width: calc(100% - 30px) !important;
+
+        padding: 25px 18px !important;
+
+    }
+
+    .coming-soon-title {
+
+        font-size: 21px !important;
+
+    }
+
+}

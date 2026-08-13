@@ -1,0 +1,1268 @@
+/* =========================================================
+   QCI HOME PAGE
+========================================================= */
+
+.qci-home-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+.qci-home-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.qci-home-hero {
+    position: relative;
+    background:
+        radial-gradient(
+            circle at 67% 25%,
+            rgba(178, 220, 255, .65),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #edf7ff 0%,
+            #f5fbff 48%,
+            #e4f3ff 100%
+        );
+    min-height: 355px;
+    overflow: hidden;
+}
+
+.qci-home-hero::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    right: 22%;
+    top: -420px;
+    border-radius: 50%;
+    background: #dcefff;
+}
+
+.qci-home-hero-grid {
+    position: relative;
+    min-height: 355px;
+    display: grid;
+    grid-template-columns: 1fr 1.05fr 275px;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.qci-home-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 40px 0;
+}
+
+.qci-home-hero-content h1 {
+    margin: 0;
+    color: #102957;
+    font-size: 31px;
+    line-height: 1.18;
+    font-weight: 700;
+    letter-spacing: -.5px;
+}
+
+.qci-home-hero-content p {
+    max-width: 490px;
+    margin: 15px 0 20px;
+    color: #34445f;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+.qci-home-hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.qci-home-btn {
+    min-height: 39px;
+    padding: 0 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.qci-home-btn-primary {
+    color: #fff;
+    background: #075dcc;
+    border: 1px solid #075dcc;
+}
+
+.qci-home-btn-outline {
+    color: #075dcc;
+    background: #fff;
+    border: 1px solid #075dcc;
+}
+
+.qci-home-video-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 18px;
+    color: #075dcc;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.qci-home-play-small {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #075dcc;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   HERO ILLUSTRATION
+========================================================= */
+
+.qci-home-hero-visual {
+    position: relative;
+    height: 330px;
+}
+
+.qci-home-hero-art {
+    position: absolute;
+    width: 470px;
+    height: 290px;
+    left: 5px;
+    bottom: 10px;
+}
+
+
+/* monitor */
+
+.qci-home-monitor {
+    position: absolute;
+    width: 255px;
+    height: 175px;
+    left: 105px;
+    top: 65px;
+}
+
+.qci-home-monitor-screen {
+    position: absolute;
+    inset: 0 0 30px;
+    padding: 10px;
+    border: 8px solid #1450a2;
+    border-radius: 8px;
+    background: #f9fdff;
+    box-shadow: 0 12px 25px rgba(20, 80, 162, .15);
+}
+
+.qci-home-screen-top {
+    width: 45%;
+    height: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background: #b7d6fa;
+}
+
+.qci-home-screen-layout {
+    display: flex;
+    gap: 9px;
+}
+
+.qci-home-screen-sidebar {
+    width: 30px;
+}
+
+.qci-home-screen-sidebar span {
+    display: block;
+    height: 9px;
+    margin-bottom: 7px;
+    border-radius: 2px;
+    background: #d9eaff;
+}
+
+.qci-home-screen-main {
+    flex: 1;
+}
+
+.qci-home-chart {
+    height: 75px;
+    display: flex;
+    align-items: flex-end;
+    gap: 7px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #edf6ff;
+}
+
+.qci-home-chart i {
+    width: 13px;
+    display: block;
+    background: #5c9ce8;
+    border-radius: 2px 2px 0 0;
+}
+
+.qci-home-chart i:nth-child(1) {
+    height: 25%;
+}
+
+.qci-home-chart i:nth-child(2) {
+    height: 55%;
+}
+
+.qci-home-chart i:nth-child(3) {
+    height: 40%;
+}
+
+.qci-home-chart i:nth-child(4) {
+    height: 80%;
+}
+
+.qci-home-screen-lines {
+    margin-top: 8px;
+}
+
+.qci-home-screen-lines span {
+    display: block;
+    height: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    background: #d4e8fb;
+}
+
+.qci-home-screen-lines span:nth-child(1) {
+    width: 90%;
+}
+
+.qci-home-screen-lines span:nth-child(2) {
+    width: 65%;
+}
+
+.qci-home-screen-lines span:nth-child(3) {
+    width: 80%;
+}
+
+.qci-home-monitor-stand {
+    position: absolute;
+    width: 34px;
+    height: 27px;
+    left: calc(50% - 17px);
+    bottom: 7px;
+    background: #1450a2;
+}
+
+.qci-home-monitor-base {
+    position: absolute;
+    width: 100px;
+    height: 9px;
+    left: calc(50% - 50px);
+    bottom: 0;
+    border-radius: 8px;
+    background: #1450a2;
+}
+
+
+/* shield */
+
+.qci-home-shield {
+    position: absolute;
+    left: 48px;
+    top: 115px;
+    width: 48px;
+    height: 57px;
+    clip-path: polygon(
+        50% 0,
+        100% 18%,
+        90% 72%,
+        50% 100%,
+        10% 72%,
+        0 18%
+    );
+    background: #1264d2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+/* user card */
+
+.qci-home-user-card {
+    position: absolute;
+    top: 28px;
+    right: 65px;
+    width: 62px;
+    height: 68px;
+    padding: 8px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(29, 88, 150, .12);
+}
+
+.qci-home-user-icon {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    border-radius: 50%;
+    background: #dbeeff;
+    color: #2372d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qci-home-user-card > span {
+    display: block;
+    height: 4px;
+    margin-top: 5px;
+    border-radius: 2px;
+    background: #dceafa;
+}
+
+.qci-home-user-card > span:last-child {
+    width: 70%;
+}
+
+
+/* check card */
+
+.qci-home-check-card {
+    position: absolute;
+    left: 70px;
+    bottom: 25px;
+    width: 66px;
+    padding: 9px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(29, 88, 150, .12);
+}
+
+.qci-home-check-card div {
+    width: 17px;
+    height: 17px;
+    margin: 4px auto;
+    border-radius: 50%;
+    background: #ddf5e8;
+    color: #149455;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+}
+
+
+/* plant */
+
+.qci-home-plant {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 80px;
+    height: 125px;
+}
+
+.qci-home-pot {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 42px;
+    height: 45px;
+    border-radius: 4px 4px 12px 12px;
+    background: #1773da;
+}
+
+.qci-home-leaf {
+    position: absolute;
+    width: 32px;
+    height: 55px;
+    border-radius: 100% 0 100% 0;
+    background: #279e81;
+    transform-origin: bottom;
+}
+
+.leaf-one {
+    left: 20px;
+    bottom: 36px;
+    transform: rotate(-30deg);
+}
+
+.leaf-two {
+    left: 34px;
+    bottom: 45px;
+    transform: rotate(25deg);
+}
+
+.leaf-three {
+    left: 8px;
+    bottom: 45px;
+    transform: rotate(-65deg);
+}
+
+.leaf-four {
+    left: 40px;
+    bottom: 67px;
+    transform: rotate(50deg);
+}
+
+
+/* =========================================================
+   LATEST UPDATES
+========================================================= */
+
+.qci-home-updates {
+    position: relative;
+    z-index: 5;
+    width: 275px;
+    align-self: center;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(27, 75, 125, .12);
+    overflow: hidden;
+}
+
+.qci-home-updates-header {
+    height: 50px;
+    padding: 0 17px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #e5ebf3;
+}
+
+.qci-home-megaphone {
+    color: #075dcc;
+    font-size: 20px;
+}
+
+.qci-home-updates-header h3 {
+    margin: 0;
+    color: #0750aa;
+    font-size: 13px;
+}
+
+.qci-home-update-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 13px 13px;
+    border-bottom: 1px solid #e7ecf3;
+}
+
+.qci-home-update-icon {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.qci-home-update-new {
+    background: #fff0f0;
+    color: #ef3131;
+}
+
+.qci-home-update-blue {
+    background: #edf5ff;
+    color: #176bd4;
+    font-size: 15px;
+}
+
+.qci-home-update-image {
+    background: #edf8ff;
+    color: #1676d8;
+    font-size: 15px;
+}
+
+.qci-home-update-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.qci-home-update-content strong {
+    display: block;
+    color: #1c2940;
+    font-size: 9px;
+    line-height: 1.45;
+}
+
+.qci-home-update-content small {
+    display: block;
+    margin-top: 4px;
+    color: #9ba5b4;
+    font-size: 8px;
+}
+
+.qci-home-update-arrow {
+    color: #36445a;
+    font-size: 20px;
+}
+
+.qci-home-all-updates {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #075dcc;
+    font-size: 9px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.qci-home-section-heading {
+    text-align: center;
+    padding: 18px 0 22px;
+}
+
+.qci-home-section-heading h2 {
+    display: inline-block;
+    margin: 0;
+    color: #142b5a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.qci-home-section-heading p {
+    margin: 5px 0 0;
+    color: #667289;
+    font-size: 10px;
+}
+
+.qci-home-heading-line {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 2px;
+    margin: 0 10px;
+    background: #176bd4;
+}
+
+
+/* =========================================================
+   HOW IT WORKS
+========================================================= */
+
+.qci-home-how {
+    background: #fff;
+}
+
+.qci-home-process {
+    display: grid;
+    grid-template-columns: 1fr 45px 1fr 45px 1fr 45px 1fr 45px 1fr 45px 1fr;
+    align-items: start;
+    padding-bottom: 22px;
+}
+
+.qci-home-process-item {
+    text-align: center;
+}
+
+.qci-home-process-circle {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border: 1px solid #a9cef8;
+    border-radius: 50%;
+    background: #fafdff;
+    color: #1166d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.qci-home-process-number {
+    width: 22px;
+    height: 22px;
+    margin: -2px auto 7px;
+    border-radius: 50%;
+    background: #3887e5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7px;
+    font-weight: 700;
+}
+
+.qci-home-process-item h3 {
+    margin: 0;
+    color: #182746;
+    font-size: 10px;
+}
+
+.qci-home-process-item p {
+    max-width: 125px;
+    margin: 6px auto 0;
+    color: #606c81;
+    font-size: 8px;
+    line-height: 1.45;
+}
+
+.qci-home-process-arrow {
+    padding-top: 26px;
+    color: #2475d9;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.qci-home-features {
+    padding: 3px 0 20px;
+    background: #f5faff;
+}
+
+.qci-home-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.qci-home-feature-card {
+    min-height: 88px;
+    padding: 13px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid #dce6f1;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.qci-home-feature-icon {
+    width: 35px;
+    height: 35px;
+    flex: 0 0 35px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.qci-home-icon-blue {
+    background: #eaf4ff;
+    color: #1470d7;
+}
+
+.qci-home-icon-purple {
+    background: #f2ecff;
+    color: #8659dc;
+}
+
+.qci-home-icon-green {
+    background: #e8f9f3;
+    color: #18a379;
+}
+
+.qci-home-icon-red {
+    background: #fff0f0;
+    color: #ef3030;
+    font-size: 8px;
+}
+
+.qci-home-icon-orange {
+    background: #fff4df;
+    color: #f09a1b;
+}
+
+.qci-home-icon-pink {
+    background: #fff0fa;
+    color: #df57b9;
+}
+
+.qci-home-icon-teal {
+    background: #e8f7f4;
+    color: #1ca589;
+}
+
+.qci-home-feature-card h3 {
+    margin: 1px 0 6px;
+    color: #1d2941;
+    font-size: 9px;
+    line-height: 1.3;
+}
+
+.qci-home-feature-card p {
+    margin: 0;
+    color: #606c81;
+    font-size: 8px;
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   VIDEO SECTION
+========================================================= */
+
+.qci-home-video-section {
+    padding: 18px 0 10px;
+}
+
+.qci-home-video-card {
+    min-height: 145px;
+    padding: 18px 45px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    border-radius: 6px;
+    background: linear-gradient(
+        105deg,
+        #06396f,
+        #032c5c
+    );
+    overflow: hidden;
+}
+
+.qci-home-video-illustration {
+    position: relative;
+    width: 350px;
+    height: 105px;
+    flex: 0 0 350px;
+}
+
+.qci-home-laptop {
+    position: absolute;
+    left: 45px;
+    top: 5px;
+    width: 215px;
+}
+
+.qci-home-laptop-screen {
+    height: 82px;
+    padding: 10px;
+    border: 4px solid #a8d6ff;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.qci-home-laptop-screen div {
+    height: 7px;
+    margin-bottom: 7px;
+    border-radius: 3px;
+    background: #d8eafa;
+}
+
+.qci-home-laptop-screen div:nth-child(1) {
+    width: 70%;
+}
+
+.qci-home-laptop-screen div:nth-child(2) {
+    width: 45%;
+}
+
+.qci-home-laptop-screen div:nth-child(3) {
+    width: 80%;
+}
+
+.qci-home-laptop-base {
+    width: 250px;
+    height: 8px;
+    margin-left: -17px;
+    border-radius: 10px;
+    background: #9ccdf5;
+}
+
+.qci-home-video-play {
+    position: absolute;
+    top: 25px;
+    left: 125px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #287fe4;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    box-shadow: 0 0 0 5px rgba(255,255,255,.15);
+}
+
+.qci-home-video-content {
+    color: #fff;
+}
+
+.qci-home-video-content h2 {
+    margin: 0 0 8px;
+    font-size: 19px;
+}
+
+.qci-home-video-content p {
+    max-width: 470px;
+    margin: 0 0 13px;
+    color: #d9e7f8;
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+.qci-home-video-button {
+    min-height: 35px;
+    padding: 0 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: #fff;
+    color: #075dcc;
+    font-size: 9px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   FAQ + HELP
+========================================================= */
+
+.qci-home-support {
+    padding: 10px 0 20px;
+}
+
+.qci-home-support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.qci-home-faq,
+.qci-home-help {
+    padding: 15px;
+    border: 1px solid #dce6f1;
+    border-radius: 6px;
+    background: #f9fcff;
+}
+
+.qci-home-faq h2,
+.qci-home-help h2 {
+    margin: 0 0 10px;
+    color: #15336b;
+    font-size: 15px;
+}
+
+.qci-home-faq-list {
+    border: 1px solid #dce5ef;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.qci-home-faq-item {
+    width: 100%;
+    min-height: 30px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 1px solid #e1e8f0;
+    background: #fff;
+    color: #35435b;
+    font-family: inherit;
+    font-size: 9px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.qci-home-faq-item:last-child {
+    border-bottom: none;
+}
+
+.qci-home-faq-item b {
+    color: #142f61;
+    font-size: 15px;
+}
+
+.qci-home-view-faq {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    color: #075dcc;
+    font-size: 9px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* help */
+
+.qci-home-help {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.qci-home-help-content {
+    flex: 1;
+}
+
+.qci-home-help > p {
+    margin: -5px 0 12px;
+    color: #667289;
+    font-size: 9px;
+}
+
+.qci-home-help-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.qci-home-help-item > span {
+    width: 25px;
+    height: 25px;
+    color: #0764ce;
+    font-size: 17px;
+}
+
+.qci-home-help-item strong {
+    display: block;
+    color: #2c3952;
+    font-size: 9px;
+}
+
+.qci-home-help-item a,
+.qci-home-help-item p {
+    margin: 2px 0 0;
+    color: #59667b;
+    font-size: 8px;
+    text-decoration: none;
+}
+
+.qci-home-user-guide {
+    height: 30px;
+    padding: 0 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    border: 1px solid #8bbcf0;
+    border-radius: 4px;
+    color: #075dcc;
+    font-size: 8px;
+    text-decoration: none;
+}
+
+.qci-home-help-illustration {
+    position: relative;
+    width: 145px;
+    flex: 0 0 145px;
+}
+
+.qci-home-headphone {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 20px;
+    top: 18px;
+}
+
+.qci-home-headphone-band {
+    position: absolute;
+    width: 70px;
+    height: 65px;
+    left: 10px;
+    top: 5px;
+    border: 8px solid #123e77;
+    border-bottom: none;
+    border-radius: 45px 45px 0 0;
+}
+
+.qci-home-headphone-left,
+.qci-home-headphone-right {
+    position: absolute;
+    top: 42px;
+    width: 19px;
+    height: 35px;
+    border-radius: 7px;
+    background: #176fd2;
+}
+
+.qci-home-headphone-left {
+    left: 2px;
+}
+
+.qci-home-headphone-right {
+    right: 2px;
+}
+
+.qci-home-chat-bubble {
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    padding: 9px 14px;
+    border-radius: 8px;
+    background: #b7d1ef;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .qci-home-container {
+        width: min(100% - 30px, 1000px);
+    }
+
+    .qci-home-hero-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .qci-home-hero-visual {
+        order: 2;
+    }
+
+    .qci-home-updates {
+        position: absolute;
+        right: 0;
+        top: 30px;
+        width: 250px;
+    }
+
+    .qci-home-hero-content {
+        padding-right: 30px;
+    }
+
+    .qci-home-feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .qci-home-process {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 20px;
+    }
+
+    .qci-home-process-arrow {
+        display: none;
+    }
+
+    .qci-home-video-card {
+        gap: 25px;
+        padding: 18px 25px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .qci-home-container {
+        width: calc(100% - 24px);
+    }
+
+
+    /* HERO */
+
+    .qci-home-hero {
+        min-height: auto;
+    }
+
+    .qci-home-hero-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .qci-home-hero-content {
+        padding: 30px 0 10px;
+    }
+
+    .qci-home-hero-content h1 {
+        font-size: 25px;
+    }
+
+    .qci-home-hero-content p {
+        font-size: 11px;
+    }
+
+    .qci-home-hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .qci-home-btn {
+        width: 100%;
+    }
+
+    .qci-home-hero-visual {
+        height: 250px;
+        order: initial;
+    }
+
+    .qci-home-hero-art {
+        transform: scale(.72);
+        transform-origin: center;
+        left: 50%;
+        margin-left: -235px;
+    }
+
+    .qci-home-updates {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        margin: 0 0 25px;
+    }
+
+
+    /* HOW IT WORKS */
+
+    .qci-home-section-heading {
+        padding-top: 20px;
+    }
+
+    .qci-home-section-heading h2 {
+        font-size: 18px;
+    }
+
+    .qci-home-process {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 15px;
+    }
+
+    .qci-home-process-item p {
+        max-width: 150px;
+        font-size: 8px;
+    }
+
+
+    /* FEATURES */
+
+    .qci-home-feature-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .qci-home-feature-card {
+        min-height: 100px;
+        padding: 10px;
+    }
+
+
+    /* VIDEO */
+
+    .qci-home-video-card {
+        flex-direction: column;
+        gap: 5px;
+        padding: 20px 15px;
+        align-items: stretch;
+    }
+
+    .qci-home-video-illustration {
+        width: 100%;
+        height: 120px;
+        flex-basis: 120px;
+    }
+
+    .qci-home-laptop {
+        left: 50%;
+        margin-left: -108px;
+    }
+
+    .qci-home-video-play {
+        left: calc(50% - 22px);
+    }
+
+    .qci-home-video-content h2 {
+        font-size: 17px;
+    }
+
+
+    /* SUPPORT */
+
+    .qci-home-support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qci-home-help {
+        min-height: 240px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .qci-home-container {
+        width: calc(100% - 16px);
+    }
+
+    .qci-home-hero-content h1 {
+        font-size: 22px;
+    }
+
+    .qci-home-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qci-home-feature-card {
+        min-height: 75px;
+    }
+
+    .qci-home-process {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .qci-home-process-circle {
+        width: 52px;
+        height: 52px;
+    }
+
+    .qci-home-help-illustration {
+        display: none;
+    }
+
+}

@@ -1,0 +1,3287 @@
+/* =========================================================
+   QCI NOMINEE REGISTRATION
+   All classes use qci- prefix to avoid conflicts
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    color: #101c3f;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.qci-header {
+    width: 100%;
+    height: 86px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e9f1;
+}
+
+.qci-header-inner {
+    width: 1015px;
+    height: 86px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.qci-brand-area {
+    width: 248px;
+    display: flex;
+    align-items: center;
+}
+
+.qci-logo {
+    width: 48px;
+    height: 55px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qci-logo-ring {
+    width: 43px;
+    height: 43px;
+    border: 8px solid #0874c9;
+    border-radius: 50%;
+    position: relative;
+}
+
+.qci-logo-cut {
+    position: absolute;
+    width: 25px;
+    height: 8px;
+    background: #102f69;
+    right: -9px;
+    bottom: 2px;
+    transform: rotate(45deg);
+    border-radius: 5px;
+}
+
+.qci-logo-text {
+    position: absolute;
+    left: 7px;
+    top: 43px;
+}
+
+.qci-logo-q {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #183e78;
+}
+
+.qci-brand-divider {
+    height: 38px;
+    width: 1px;
+    background: #d8deea;
+    margin-left: 7px;
+    margin-right: 17px;
+}
+
+.qci-brand-content h1 {
+    margin: 0 0 4px;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #111111;
+    font-weight: 800;
+}
+
+.qci-brand-content p {
+    margin: 0;
+    font-size: 8px;
+    color: #303030;
+}
+
+
+/* =========================================================
+   PORTAL TITLE
+========================================================= */
+
+.qci-portal-title {
+    width: 295px;
+    padding-left: 22px;
+    border-left: 1px solid #e0e4ec;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.qci-portal-title strong {
+    color: #142a65;
+    font-size: 15px;
+    line-height: 1.15;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.qci-navigation {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.qci-nav-item {
+    text-decoration: none;
+    color: #182443;
+    font-size: 10px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.qci-nav-icon {
+    font-size: 13px;
+    color: #102e6a;
+}
+
+.qci-login-btn {
+    height: 36px;
+    padding: 0 17px;
+    background: #102f78;
+    color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(16, 47, 120, 0.18);
+}
+
+
+/* =========================================================
+   MAIN WRAPPER
+========================================================= */
+
+.qci-registration-wrapper {
+    width: 1015px;
+    margin: 0 auto;
+    display: flex;
+    min-height: 1130px;
+    border: 1px solid #dce2ed;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(19, 44, 83, 0.04);
+}
+
+
+/* =========================================================
+   LEFT SIDEBAR
+========================================================= */
+
+.qci-registration-sidebar {
+    width: 285px;
+    flex-shrink: 0;
+    background:
+        linear-gradient(
+            180deg,
+            #f5f8ff 0%,
+            #eef4ff 100%
+        );
+    border-right: 1px solid #dce3ef;
+}
+
+.qci-sidebar-content {
+    padding: 70px 27px 35px;
+}
+
+.qci-sidebar-content h2 {
+    margin: 0;
+    color: #102967;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.qci-title-line {
+    width: 42px;
+    height: 3px;
+    background: #1267db;
+    margin-top: 12px;
+    margin-bottom: 22px;
+}
+
+.qci-sidebar-description {
+    margin: 0;
+    color: #25324d;
+    font-size: 11px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   SIDEBAR ILLUSTRATION
+========================================================= */
+
+.qci-sidebar-illustration {
+    height: 220px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.qci-document-icon {
+    position: absolute;
+    left: 7px;
+    top: 45px;
+    width: 65px;
+    height: 94px;
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #bfd3f8;
+    border-radius: 8px;
+    padding: 14px 10px;
+}
+
+.qci-doc-avatar {
+    width: 16px;
+    height: 16px;
+    background: #d8e5fb;
+    border-radius: 50%;
+    margin-bottom: 9px;
+}
+
+.qci-doc-line {
+    height: 5px;
+    background: #dce7f9;
+    border-radius: 3px;
+    margin-bottom: 6px;
+}
+
+.qci-doc-line-one {
+    width: 35px;
+}
+
+.qci-doc-line-two {
+    width: 42px;
+}
+
+.qci-doc-line-three {
+    width: 28px;
+}
+
+.qci-doc-line-four {
+    width: 37px;
+}
+
+
+.qci-shield {
+    position: absolute;
+    left: 64px;
+    top: 28px;
+    width: 105px;
+    height: 128px;
+    background: linear-gradient(
+        145deg,
+        #d7e6ff,
+        #88aef0
+    );
+    clip-path: polygon(
+        50% 0%,
+        95% 22%,
+        90% 68%,
+        70% 91%,
+        50% 100%,
+        30% 91%,
+        10% 68%,
+        5% 22%
+    );
+    opacity: 0.92;
+}
+
+.qci-shield-person {
+    position: absolute;
+    top: 36px;
+    left: 32px;
+    width: 43px;
+    height: 62px;
+}
+
+.qci-person-head {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #063b9c;
+    margin: 0 auto 5px;
+}
+
+.qci-person-body {
+    width: 43px;
+    height: 28px;
+    border-radius: 23px 23px 5px 5px;
+    background: #063b9c;
+}
+
+
+.qci-check-circle {
+    position: absolute;
+    left: 144px;
+    top: 112px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #0875db;
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #f2f6ff;
+}
+
+.qci-dot-pattern {
+    position: absolute;
+    right: 5px;
+    top: 93px;
+    width: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 5px);
+    gap: 8px;
+}
+
+.qci-dot-pattern span {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #b8cff7;
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.qci-process {
+    margin-top: 3px;
+}
+
+.qci-process h3 {
+    color: #10347d;
+    font-size: 14px;
+    margin: 0 0 15px 3px;
+}
+
+.qci-process-item {
+    min-height: 76px;
+    position: relative;
+    padding-left: 50px;
+}
+
+.qci-process-item::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 34px;
+    width: 1px;
+    height: 52px;
+    background: #bfd0ed;
+}
+
+.qci-process-item:last-child::before {
+    display: none;
+}
+
+.qci-process-number {
+    position: absolute;
+    left: 2px;
+    top: 0;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: #d4def4;
+    color: #153b84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.qci-process-active .qci-process-number {
+    background: #dbe9ff;
+    border: 2px solid #6b9ef2;
+    color: #1262cf;
+}
+
+.qci-process-content h4 {
+    margin: 1px 0 7px;
+    color: #17254a;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.qci-process-content p {
+    margin: 0;
+    color: #52617d;
+    font-size: 9px;
+    line-height: 1.55;
+    max-width: 175px;
+}
+
+
+/* =========================================================
+   HELP BOX
+========================================================= */
+
+.qci-help-box {
+    margin-top: 13px;
+    border: 1px solid #b9d0f5;
+    background: #edf5ff;
+    border-radius: 8px;
+    padding: 18px 17px;
+}
+
+.qci-help-box h3 {
+    margin: 0 0 12px;
+    color: #1041a0;
+    font-size: 14px;
+}
+
+.qci-help-box p {
+    margin: 0 0 17px;
+    font-size: 9px;
+    line-height: 1.7;
+    color: #283856;
+}
+
+.qci-help-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #1257bb;
+    font-size: 9px;
+    font-weight: 600;
+    margin-top: 11px;
+}
+
+.qci-help-icon {
+    font-size: 14px;
+    color: #1264cc;
+}
+
+.qci-help-row small {
+    display: block;
+    color: #263653;
+    margin-top: 5px;
+    font-size: 8px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   FORM AREA
+========================================================= */
+
+.qci-registration-form-area {
+    flex: 1;
+    padding: 35px 27px 28px;
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   STEPPER
+========================================================= */
+
+.qci-stepper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 29px;
+}
+
+.qci-step {
+    width: 112px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.qci-step-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #eeeeef;
+    color: #283044;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.qci-step-active .qci-step-circle {
+    background: #1266d6;
+    color: #ffffff;
+}
+
+.qci-step span {
+    margin-top: 10px;
+    color: #596176;
+    font-size: 9px;
+    white-space: nowrap;
+}
+
+.qci-step-active span {
+    color: #17254a;
+    font-weight: 600;
+}
+
+.qci-step-line {
+    width: 105px;
+    height: 1px;
+    border-top: 2px dotted #b9bec9;
+    margin-top: 14px;
+}
+
+
+/* =========================================================
+   INFO ALERT
+========================================================= */
+
+.qci-info-alert {
+    min-height: 64px;
+    border: 1px solid #b8cff7;
+    border-radius: 7px;
+    background: #eff5ff;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 10px 16px;
+    color: #0e4eb8;
+    margin-bottom: 24px;
+}
+
+.qci-info-icon {
+    flex-shrink: 0;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #1467d5;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qci-info-alert strong {
+    display: block;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FORM SECTIONS
+========================================================= */
+
+.qci-form-section h2 {
+    margin: 0 0 17px;
+    color: #102866;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.qci-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 14px;
+}
+
+.qci-form-group {
+    width: 100%;
+}
+
+.qci-form-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #15203b;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.qci-form-group label span {
+    color: #e52323;
+}
+
+.qci-form-group input,
+.qci-form-group select,
+.qci-form-group textarea {
+    width: 100%;
+    border: 1px solid #d5dce7;
+    background: #ffffff;
+    border-radius: 5px;
+    height: 36px;
+    padding: 0 12px;
+    outline: none;
+    color: #26334e;
+    font-family: inherit;
+    font-size: 10px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.015);
+}
+
+.qci-form-group input::placeholder,
+.qci-form-group textarea::placeholder {
+    color: #8991a0;
+}
+
+.qci-form-group input:focus,
+.qci-form-group select:focus,
+.qci-form-group textarea:focus {
+    border-color: #558ee5;
+    box-shadow: 0 0 0 2px rgba(43, 108, 219, 0.08);
+}
+
+.qci-form-group textarea {
+    height: 99px;
+    resize: none;
+    padding-top: 10px;
+}
+
+
+/* =========================================================
+   GSTIN
+========================================================= */
+
+.qci-gstin-row {
+    display: flex;
+    gap: 13px;
+}
+
+.qci-input-with-icon {
+    position: relative;
+    flex: 1;
+}
+
+.qci-input-with-icon input {
+    padding-left: 37px;
+}
+
+.qci-input-icon {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    font-size: 14px;
+    color: #364867;
+}
+
+.qci-primary-btn {
+    width: 150px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    background: #103b8e;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.qci-primary-btn:hover {
+    background: #0b3179;
+}
+
+.qci-form-group small {
+    display: block;
+    margin-top: 8px;
+    color: #6d7484;
+    font-size: 8px;
+    line-height: 1.5;
+}
+
+.qci-section-divider {
+    width: 100%;
+    height: 1px;
+    background: #e2e5eb;
+    margin: 24px 0 22px;
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+.qci-phone-row {
+    display: flex;
+    gap: 7px;
+}
+
+.qci-phone-row select {
+    width: 76px;
+    flex-shrink: 0;
+}
+
+.qci-phone-row input {
+    flex: 1;
+}
+
+
+/* =========================================================
+   PASSWORD
+========================================================= */
+
+.qci-password-input {
+    height: 36px;
+    position: relative;
+}
+
+.qci-password-input input {
+    padding-right: 38px;
+}
+
+.qci-password-input button {
+    position: absolute;
+    right: 9px;
+    top: 7px;
+    width: 22px;
+    height: 22px;
+    border: none;
+    background: transparent;
+    color: #687083;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   ORGANIZATION
+========================================================= */
+
+.qci-normal-select {
+    appearance: auto;
+}
+
+.qci-organization-right {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+/* =========================================================
+   DECLARATION
+========================================================= */
+
+.qci-declaration {
+    margin-top: 17px;
+    border: 1px solid #cbd9ef;
+    border-radius: 5px;
+    background: #f3f7fe;
+    padding: 12px 14px;
+}
+
+.qci-checkbox-wrapper {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    position: relative;
+}
+
+.qci-checkbox-wrapper input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.qci-custom-checkbox {
+    width: 17px;
+    height: 17px;
+    border: 1px solid #b8c3d3;
+    border-radius: 3px;
+    background: #ffffff;
+    margin-right: 12px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.qci-checkbox-wrapper input:checked + .qci-custom-checkbox {
+    background: #145cc3;
+    border-color: #145cc3;
+}
+
+.qci-checkbox-wrapper input:checked + .qci-custom-checkbox::after {
+    content: "✓";
+    color: #ffffff;
+    position: absolute;
+    left: 3px;
+    top: -1px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.qci-declaration-text {
+    color: #1f2a42;
+    font-size: 9px;
+    line-height: 1.65;
+}
+
+.qci-declaration-text a {
+    color: #064fae;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.qci-form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.qci-cancel-btn {
+    width: 91px;
+    height: 36px;
+    border: 1px solid #214c9c;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #123c87;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.qci-submit-btn {
+    width: 130px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    background: #103c90;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qci-submit-btn span {
+    font-size: 17px;
+    margin-left: 8px;
+    vertical-align: -1px;
+}
+
+.qci-submit-btn:hover {
+    background: #0a327d;
+}
+
+
+/* =========================================================
+   SECURITY STRIP
+========================================================= */
+
+.qci-security-strip {
+    width: 1015px;
+    height: 55px;
+    margin: 0 auto;
+    border: 1px solid #dce2ed;
+    border-top: none;
+    background: #f5f8fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    color: #3b4861;
+    font-size: 9px;
+}
+
+.qci-lock-icon {
+    color: #1d4ba1;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.qci-footer {
+    width: 100%;
+    min-height: 180px;
+    background: #092f63;
+    color: #ffffff;
+}
+
+.qci-footer-inner {
+    width: 935px;
+    margin: 0 auto;
+    min-height: 145px;
+    display: flex;
+    align-items: center;
+    padding-top: 17px;
+}
+
+
+/* =========================================================
+   FOOTER BRAND
+========================================================= */
+
+.qci-footer-brand {
+    width: 275px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.qci-footer-logo {
+    width: 52px;
+    position: relative;
+    height: 63px;
+    flex-shrink: 0;
+}
+
+.qci-footer-logo-ring {
+    width: 46px;
+    height: 46px;
+    border: 8px solid #08a1e7;
+    border-radius: 50%;
+    position: relative;
+}
+
+.qci-footer-logo-ring::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 8px;
+    background: #76d3fa;
+    right: -10px;
+    bottom: 0;
+    transform: rotate(45deg);
+    border-radius: 5px;
+}
+
+.qci-footer-logo span {
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    font-size: 8px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.qci-footer-brand-text strong {
+    display: block;
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+
+.qci-footer-brand-text p {
+    margin: 0;
+    font-size: 9px;
+    line-height: 1.65;
+    color: #dce8f9;
+}
+
+
+/* =========================================================
+   FOOTER COLUMNS
+========================================================= */
+
+.qci-footer-column {
+    width: 175px;
+    min-height: 95px;
+    border-left: 1px solid rgba(255,255,255,0.35);
+    padding-left: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.qci-footer-column h4,
+.qci-footer-social h4 {
+    margin: 0 0 2px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.qci-footer-column a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 9px;
+}
+
+.qci-footer-column a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   SOCIAL
+========================================================= */
+
+.qci-footer-social {
+    min-height: 95px;
+    border-left: 1px solid rgba(255,255,255,0.35);
+    padding-left: 34px;
+    flex: 1;
+}
+
+.qci-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 14px;
+}
+
+.qci-social-icons a {
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 50%;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.qci-footer-bottom {
+    width: 935px;
+    margin: 0 auto;
+    height: 35px;
+    border-top: 1px solid rgba(255,255,255,0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e2ebf7;
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   BUTTON / INPUT INTERACTION
+========================================================= */
+
+.qci-primary-btn,
+.qci-submit-btn,
+.qci-cancel-btn,
+.qci-login-btn {
+    transition: all 0.2s ease;
+}
+
+.qci-primary-btn:active,
+.qci-submit-btn:active,
+.qci-cancel-btn:active {
+    transform: translateY(1px);
+}
+
+
+/* =========================================================
+   REMOVE DEFAULT SELECT ARROW STYLING ISSUES
+========================================================= */
+
+.qci-form-group select {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   FIXED DESKTOP WIDTH
+   Intentionally NOT responsive as requested
+========================================================= */
+
+.qci-header-inner,
+.qci-registration-wrapper,
+.qci-security-strip {
+    min-width: 85%;
+}
+
+/* =========================================================
+   RESPONSIVE QCI NOMINEE REGISTRATION
+========================================================= */
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .qci-header-inner,
+    .qci-registration-wrapper,
+    .qci-security-strip {
+        width: 1180px;
+        max-width: calc(100% - 40px);
+    }
+
+    .qci-registration-sidebar {
+        width: 300px;
+    }
+
+    .qci-registration-form-area {
+        padding: 35px 30px;
+    }
+
+    .qci-footer-inner,
+    .qci-footer-bottom {
+        width: 1100px;
+        max-width: calc(100% - 40px);
+    }
+}
+
+
+/* =========================================================
+   DESKTOP / LAPTOP
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .qci-header-inner {
+        width: calc(100% - 30px);
+    }
+
+    .qci-registration-wrapper {
+        width: calc(100% - 30px);
+    }
+
+    .qci-security-strip {
+        width: calc(100% - 30px);
+    }
+
+    .qci-footer-inner,
+    .qci-footer-bottom {
+        width: calc(100% - 50px);
+    }
+
+    .qci-navigation {
+        gap: 11px;
+    }
+
+    .qci-nav-item {
+        font-size: 9px;
+    }
+
+    .qci-portal-title {
+        width: 240px;
+    }
+
+    .qci-brand-area {
+        width: 225px;
+    }
+
+    .qci-step-line {
+        width: 70px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* HEADER */
+
+    .qci-header {
+        height: auto;
+        min-height: 90px;
+    }
+
+    .qci-header-inner {
+        width: calc(100% - 30px);
+        min-width: 0;
+        height: auto;
+        min-height: 90px;
+        padding: 15px 0;
+        flex-wrap: wrap;
+    }
+
+    .qci-brand-area {
+        width: 230px;
+    }
+
+    .qci-portal-title {
+        width: 230px;
+        padding-left: 15px;
+    }
+
+    .qci-portal-title strong {
+        font-size: 13px;
+    }
+
+    .qci-navigation {
+        width: 100%;
+        margin: 15px 0 0;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    /* MAIN */
+
+    .qci-registration-wrapper {
+        width: calc(100% - 30px);
+        min-width: 0;
+        min-height: auto;
+    }
+
+    .qci-registration-sidebar {
+        width: 245px;
+    }
+
+    .qci-sidebar-content {
+        padding: 45px 20px 30px;
+    }
+
+    .qci-sidebar-content h2 {
+        font-size: 20px;
+    }
+
+    .qci-sidebar-description {
+        font-size: 10px;
+    }
+
+    .qci-registration-form-area {
+        padding: 30px 20px;
+    }
+
+
+    /* STEPPER */
+
+    .qci-step {
+        width: 85px;
+    }
+
+    .qci-step-line {
+        width: 45px;
+    }
+
+    .qci-step span {
+        font-size: 8px;
+    }
+
+
+    /* FORM */
+
+    .qci-form-grid {
+        column-gap: 15px;
+    }
+
+    .qci-gstin-row {
+        gap: 8px;
+    }
+
+    .qci-primary-btn {
+        width: 125px;
+    }
+
+
+    /* SECURITY */
+
+    .qci-security-strip {
+        width: calc(100% - 30px);
+        min-width: 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+
+    /* FOOTER */
+
+    .qci-footer-inner {
+        width: calc(100% - 40px);
+        min-height: auto;
+        flex-wrap: wrap;
+        padding: 30px 0;
+        gap: 25px;
+    }
+
+    .qci-footer-brand {
+        width: 100%;
+    }
+
+    .qci-footer-column {
+        width: 30%;
+    }
+
+    .qci-footer-social {
+        width: 30%;
+        flex: none;
+    }
+
+    .qci-footer-bottom {
+        width: calc(100% - 40px);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-size: 13px;
+    }
+
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    .qci-header {
+        height: auto;
+        min-height: 0;
+    }
+
+    .qci-header-inner {
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        min-height: 0;
+        padding: 15px 18px;
+        display: block;
+    }
+
+
+    /* BRAND */
+
+    .qci-brand-area {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .qci-brand-content h1 {
+        font-size: 12px;
+    }
+
+    .qci-brand-content p {
+        font-size: 8px;
+    }
+
+
+    /* PORTAL */
+
+    .qci-portal-title {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #e0e4ec;
+        padding: 12px 0 0;
+        margin-top: 12px;
+    }
+
+    .qci-portal-title strong {
+        font-size: 14px;
+    }
+
+
+    /* NAVIGATION */
+
+    .qci-navigation {
+        width: 100%;
+        margin: 15px 0 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .qci-nav-item {
+        min-height: 34px;
+        justify-content: center;
+        background: #f5f7fb;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+
+    .qci-login-btn {
+        grid-column: 1 / -1;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       MAIN
+    ===================================================== */
+
+    .qci-registration-wrapper {
+        width: calc(100% - 20px);
+        min-width: 0;
+        margin: 10px auto 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        border-radius: 7px;
+    }
+
+
+    /* =====================================================
+       SIDEBAR
+    ===================================================== */
+
+    .qci-registration-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #dce3ef;
+    }
+
+    .qci-sidebar-content {
+        padding: 30px 20px 25px;
+    }
+
+    .qci-sidebar-content h2 {
+        font-size: 21px;
+    }
+
+    .qci-sidebar-description {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+
+    /* ILLUSTRATION */
+
+    .qci-sidebar-illustration {
+        height: 170px;
+        margin-top: 15px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* PROCESS */
+
+    .qci-process {
+        margin-top: 10px;
+    }
+
+    .qci-process h3 {
+        font-size: 14px;
+    }
+
+    .qci-process-item {
+        min-height: 68px;
+    }
+
+    .qci-process-content p {
+        max-width: 100%;
+    }
+
+
+    /* HELP */
+
+    .qci-help-box {
+        margin-top: 15px;
+    }
+
+
+    /* =====================================================
+       FORM
+    ===================================================== */
+
+    .qci-registration-form-area {
+        width: 100%;
+        padding: 25px 16px;
+    }
+
+
+    /* =====================================================
+       STEPPER
+    ===================================================== */
+
+    .qci-stepper {
+        width: calc(100% + 10px);
+        margin-left: -5px;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 5px 5px 12px;
+        margin-bottom: 20px;
+        scrollbar-width: thin;
+    }
+
+    .qci-step {
+        width: 90px;
+        flex-shrink: 0;
+    }
+
+    .qci-step-line {
+        width: 25px;
+        flex-shrink: 0;
+    }
+
+    .qci-step span {
+        font-size: 8px;
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       ALERT
+    ===================================================== */
+
+    .qci-info-alert {
+        align-items: flex-start;
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .qci-info-alert strong {
+        font-size: 9px;
+    }
+
+    .qci-info-icon {
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       FORM GRID
+    ===================================================== */
+
+    .qci-form-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .qci-form-section h2 {
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       GSTIN
+    ===================================================== */
+
+    .qci-gstin-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .qci-primary-btn {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       INPUTS
+    ===================================================== */
+
+    .qci-form-group input,
+    .qci-form-group select,
+    .qci-form-group textarea {
+        height: 40px;
+        font-size: 11px;
+    }
+
+    .qci-form-group textarea {
+        height: 100px;
+    }
+
+
+    /* =====================================================
+       PHONE
+    ===================================================== */
+
+    .qci-phone-row {
+        gap: 8px;
+    }
+
+    .qci-phone-row select {
+        width: 80px;
+    }
+
+
+    /* =====================================================
+       ORGANIZATION
+    ===================================================== */
+
+    .qci-organization-right {
+        gap: 15px;
+    }
+
+
+    /* =====================================================
+       DECLARATION
+    ===================================================== */
+
+    .qci-declaration {
+        padding: 12px;
+    }
+
+    .qci-declaration-text {
+        font-size: 9px;
+    }
+
+
+    /* =====================================================
+       BUTTONS
+    ===================================================== */
+
+    .qci-form-actions {
+        gap: 12px;
+    }
+
+    .qci-cancel-btn,
+    .qci-submit-btn {
+        width: 50%;
+        height: 40px;
+    }
+
+
+    /* =====================================================
+       SECURITY
+    ===================================================== */
+
+    .qci-security-strip {
+        width: calc(100% - 20px);
+        min-width: 0;
+        height: auto;
+        min-height: 60px;
+        padding: 12px 18px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .qci-footer {
+        min-height: 0;
+    }
+
+    .qci-footer-inner {
+        width: calc(100% - 35px);
+        min-height: 0;
+        padding: 30px 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 15px;
+    }
+
+
+    /* FOOTER BRAND */
+
+    .qci-footer-brand {
+        width: 100%;
+        grid-column: 1 / -1;
+    }
+
+
+    /* FOOTER COLUMNS */
+
+    .qci-footer-column {
+        width: 100%;
+        min-height: auto;
+        padding-left: 15px;
+    }
+
+    .qci-footer-social {
+        width: 100%;
+        min-height: auto;
+        padding-left: 15px;
+    }
+
+    .qci-social-icons {
+        margin-top: 10px;
+    }
+
+
+    /* COPYRIGHT */
+
+    .qci-footer-bottom {
+        width: calc(100% - 35px);
+        height: auto;
+        min-height: 45px;
+        padding: 10px;
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .qci-header-inner {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .qci-brand-area {
+        transform: scale(0.95);
+        transform-origin: left center;
+    }
+
+    .qci-registration-wrapper {
+        width: calc(100% - 12px);
+    }
+
+    .qci-registration-form-area {
+        padding: 20px 12px;
+    }
+
+    .qci-sidebar-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .qci-info-alert {
+        padding: 10px;
+    }
+
+    .qci-info-alert strong {
+        font-size: 8px;
+    }
+
+    .qci-form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .qci-cancel-btn,
+    .qci-submit-btn {
+        width: 100%;
+    }
+
+    .qci-footer-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .qci-footer-brand,
+    .qci-footer-column,
+    .qci-footer-social {
+        grid-column: 1;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .qci-brand-content h1 {
+        font-size: 10px;
+    }
+
+    .qci-brand-content p {
+        font-size: 7px;
+    }
+
+    .qci-portal-title strong {
+        font-size: 12px;
+    }
+
+    .qci-step {
+        width: 78px;
+    }
+
+    .qci-step-line {
+        width: 18px;
+    }
+
+    .qci-sidebar-content h2 {
+        font-size: 19px;
+    }
+}
+
+/* =========================================================
+   QCI STEP 2
+   NOMINEE DETAILS
+========================================================= */
+
+.qci-step2-page {
+    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 0 0 20px;
+}
+
+.qci-step2-wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 1120px;
+    border: 1px solid #dce3ed;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.qci-step2-sidebar {
+    width: 255px;
+    flex: 0 0 255px;
+    background: linear-gradient(
+        180deg,
+        #f7faff 0%,
+        #ffffff 100%
+    );
+    border-right: 1px solid #dce3ed;
+}
+
+.qci-step2-sidebar-inner {
+    padding: 40px 17px 30px;
+}
+
+.qci-step2-sidebar h1 {
+    margin: 0;
+    color: #102f72;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.qci-step2-count {
+    margin-top: 12px;
+    color: #125ac1;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SIDE STEPS
+========================================================= */
+
+.qci-step2-side-steps {
+    margin-top: 12px;
+}
+
+.qci-step2-side-item {
+    position: relative;
+    min-height: 108px;
+    padding-left: 53px;
+}
+
+.qci-step2-side-line {
+    position: absolute;
+    left: 23px;
+    top: 29px;
+    width: 1px;
+    height: 100%;
+    background: #d1dceb;
+}
+
+.qci-step2-side-item:last-child .qci-step2-side-line {
+    display: none;
+}
+
+.qci-step2-side-number {
+    position: absolute;
+    top: 0;
+    left: 9px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #edf1f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #19325d;
+    font-size: 12px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.qci-step2-completed .qci-step2-side-number {
+    background: #129650;
+    color: #fff;
+}
+
+.qci-step2-active .qci-step2-side-number {
+    background: #175dce;
+    color: #fff;
+}
+
+.qci-step2-completed .qci-step2-side-line {
+    background: #6ba1ed;
+}
+
+.qci-step2-side-content {
+    padding-top: 6px;
+}
+
+.qci-step2-side-content strong {
+    display: block;
+    color: #17274a;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.qci-step2-active .qci-step2-side-content strong {
+    color: #103f97;
+}
+
+.qci-step2-side-content p {
+    margin: 8px 0 0;
+    color: #526078;
+    font-size: 10px;
+    line-height: 1.6;
+    max-width: 160px;
+}
+
+
+/* =========================================================
+   HELP
+========================================================= */
+
+.qci-step2-help {
+    margin-top: 5px;
+    padding: 17px 15px;
+    border: 1px solid #cbdcf4;
+    border-radius: 6px;
+    background: #f7faff;
+}
+
+.qci-step2-help h3 {
+    margin: 0 0 11px;
+    color: #113a83;
+    font-size: 15px;
+}
+
+.qci-step2-help p {
+    margin: 0 0 17px;
+    color: #273755;
+    font-size: 10px;
+    line-height: 1.65;
+}
+
+.qci-step2-help > a {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #0759be;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.qci-step2-help-phone {
+    display: flex;
+    gap: 9px;
+    margin-top: 14px;
+}
+
+.qci-step2-help-phone > span {
+    color: #0759be;
+    font-size: 15px;
+}
+
+.qci-step2-help-phone strong {
+    display: block;
+    color: #0759be;
+    font-size: 10px;
+}
+
+.qci-step2-help-phone small {
+    display: block;
+    margin-top: 5px;
+    color: #273755;
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   IMPORTANT NOTE
+========================================================= */
+
+.qci-step2-note {
+    margin-top: 35px;
+    padding: 14px 15px;
+    border: 1px solid #cbdcf4;
+    border-radius: 6px;
+    background: #f5f9ff;
+}
+
+.qci-step2-note-heading {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #143b82;
+    font-size: 11px;
+}
+
+.qci-step2-note-heading span {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: #1664ce;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.qci-step2-note p {
+    margin: 12px 0 0;
+    color: #273957;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.qci-step2-note b {
+    color: #e32626;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.qci-step2-content {
+    flex: 1;
+    min-width: 0;
+    padding: 34px 24px 30px;
+}
+
+
+/* =========================================================
+   TOP STEPPER
+========================================================= */
+
+.qci-step2-top-stepper {
+    width: 100%;
+    display: flex;
+    margin-bottom: 28px;
+}
+
+.qci-step2-top-item {
+    flex: 1;
+    position: relative;
+    min-width: 0;
+    text-align: center;
+}
+
+.qci-step2-top-circle {
+    position: relative;
+    z-index: 2;
+    width: 34px;
+    height: 34px;
+    margin: auto;
+    border-radius: 50%;
+    background: #edf0f4;
+    color: #243451;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.qci-step2-top-completed .qci-step2-top-circle {
+    background: #159650;
+    color: #fff;
+}
+
+.qci-step2-top-current .qci-step2-top-circle {
+    background: #175dce;
+    color: #fff;
+}
+
+.qci-step2-top-connector {
+    position: absolute;
+    top: 16px;
+    left: calc(50% + 17px);
+    width: calc(100% - 34px);
+    height: 2px;
+    background: #d5dce8;
+}
+
+.qci-step2-top-completed .qci-step2-top-connector {
+    background: #1762ce;
+}
+
+.qci-step2-top-text {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.qci-step2-top-text strong {
+    color: #25324b;
+    font-size: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.qci-step2-top-current .qci-step2-top-text strong {
+    font-weight: 700;
+}
+
+.qci-step2-top-text span {
+    color: #929aaa;
+    font-size: 10px;
+}
+
+.qci-step2-top-completed .qci-step2-top-text span {
+    color: #159650;
+}
+
+.qci-step2-top-current .qci-step2-top-text span {
+    color: #125ac1;
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.qci-step2-form-card {
+    border: 1px solid #dce3ed;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD HEADING
+========================================================= */
+
+.qci-step2-card-heading {
+    min-height: 80px;
+    padding: 16px 22px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #f9fbfe;
+    border-bottom: 1px solid #dce3ed;
+}
+
+.qci-step2-card-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 5px;
+    background: #edf4ff;
+    color: #0f5dc6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.qci-step2-card-heading h2 {
+    margin: 0 0 5px;
+    color: #123878;
+    font-size: 17px;
+}
+
+.qci-step2-card-heading p {
+    margin: 0;
+    color: #4c5b75;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.qci-step2-fields {
+    padding: 22px 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 39px;
+}
+
+.qci-step2-field {
+    min-width: 0;
+}
+
+.qci-step2-field.qci-step2-full {
+    grid-column: 1 / -1;
+}
+
+.qci-step2-field label,
+.qci-step2-communication > label {
+    display: block;
+    margin-bottom: 8px;
+    color: #16243f;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.qci-step2-field label span,
+.qci-step2-communication > label span {
+    color: #dc2222;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.qci-step2-input {
+    position: relative;
+    width: 100%;
+}
+
+.qci-step2-input input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #d4dce8;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 13px;
+    background: #fff;
+    color: #27354f;
+    font-size: 11px;
+}
+
+.qci-step2-input input:focus {
+    border-color: #3975cf;
+    box-shadow: 0 0 0 2px rgba(36, 99, 195, .08);
+}
+
+.qci-step2-input-icon {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    color: #5d6b82;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.qci-step2-input-icon + input {
+    padding-left: 39px;
+}
+
+.qci-step2-valid input {
+    padding-right: 40px;
+}
+
+.qci-step2-check {
+    position: absolute;
+    right: 11px;
+    top: 10px;
+    width: 19px;
+    height: 19px;
+    border: 1.5px solid #12964f;
+    color: #12964f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.qci-step2-arrow {
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    color: #47566d;
+    font-size: 17px;
+}
+
+.qci-step2-calendar {
+    position: absolute;
+    right: 12px;
+    top: 11px;
+    color: #52617b;
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+.qci-step2-phone {
+    display: flex;
+    gap: 10px;
+}
+
+.qci-step2-phone select {
+    width: 84px;
+    height: 40px;
+    flex: 0 0 84px;
+    border: 1px solid #d4dce8;
+    border-radius: 5px;
+    background: #fff;
+    color: #27354f;
+    padding: 0 10px;
+    outline: none;
+}
+
+.qci-step2-phone .qci-step2-input {
+    flex: 1;
+}
+
+
+/* =========================================================
+   ADDRESS
+========================================================= */
+
+.qci-step2-textarea {
+    position: relative;
+}
+
+.qci-step2-textarea textarea {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #d4dce8;
+    border-radius: 5px;
+    resize: vertical;
+    outline: none;
+    padding: 9px 13px 9px 40px;
+    color: #27354f;
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+.qci-step2-textarea > span {
+    position: absolute;
+    left: 13px;
+    top: 11px;
+    color: #5d6c83;
+}
+
+
+/* =========================================================
+   COMMUNICATION
+========================================================= */
+
+.qci-step2-communication {
+    padding: 19px 24px 20px;
+}
+
+.qci-step2-radio-group {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.qci-step2-radio {
+    display: flex !important;
+    align-items: center;
+    gap: 9px;
+    margin: 0 !important;
+    color: #3d4b65 !important;
+    font-size: 11px !important;
+    font-weight: 400 !important;
+    cursor: pointer;
+}
+
+.qci-step2-radio input {
+    position: absolute;
+    opacity: 0;
+}
+
+.qci-step2-radio > span {
+    width: 17px;
+    height: 17px;
+    border: 1.5px solid #ccd5e2;
+    border-radius: 50%;
+    position: relative;
+}
+
+.qci-step2-radio input:checked + span {
+    border-color: #1263d1;
+}
+
+.qci-step2-radio input:checked + span::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 2.5px;
+    left: 2.5px;
+    border-radius: 50%;
+    background: #1263d1;
+}
+
+
+/* =========================================================
+   SECURITY
+========================================================= */
+
+.qci-step2-security {
+    min-height: 76px;
+    padding: 15px 38px;
+    border-top: 1px solid #dce4ef;
+    background: #fbfdff;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.qci-step2-security-icon {
+    width: 28px;
+    height: 32px;
+    flex: 0 0 28px;
+    background: #1261cc;
+    color: #fff;
+    clip-path: polygon(
+        50% 0,
+        100% 18%,
+        91% 75%,
+        50% 100%,
+        9% 75%,
+        0 18%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.qci-step2-security p {
+    margin: 0;
+    max-width: 700px;
+    color: #43526c;
+    font-size: 10px;
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.qci-step2-actions {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qci-step2-back,
+.qci-step2-continue {
+    height: 43px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.qci-step2-back {
+    width: 126px;
+    background: #fff;
+    border: 1px solid #1553a7;
+    color: #103c88;
+}
+
+.qci-step2-back span {
+    margin-right: 9px;
+    font-size: 17px;
+}
+
+.qci-step2-continue {
+    width: 185px;
+    background: #0e3888;
+    border: none;
+    color: #fff;
+}
+
+.qci-step2-continue span {
+    margin-left: 12px;
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .qci-step2-page {
+        width: calc(100% - 24px);
+    }
+
+    .qci-step2-sidebar {
+        width: 220px;
+        flex-basis: 220px;
+    }
+
+    .qci-step2-sidebar-inner {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .qci-step2-content {
+        padding: 25px 16px;
+    }
+
+    .qci-step2-fields {
+        gap: 16px 20px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .qci-step2-communication {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .qci-step2-security {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .qci-step2-page {
+        width: calc(100% - 14px);
+    }
+
+    .qci-step2-wrapper {
+        display: block;
+        min-height: auto;
+    }
+
+
+    /* SIDEBAR */
+
+    .qci-step2-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #dce3ed;
+    }
+
+    .qci-step2-sidebar-inner {
+        padding: 25px 18px 20px;
+    }
+
+    .qci-step2-sidebar h1 {
+        font-size: 20px;
+    }
+
+
+    /* MOBILE SIDE STEPS */
+
+    .qci-step2-side-steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3px;
+        margin-top: 22px;
+    }
+
+    .qci-step2-side-item {
+        min-height: 75px;
+        padding: 39px 3px 0;
+        text-align: center;
+    }
+
+    .qci-step2-side-line {
+        display: block !important;
+        left: calc(50% + 15px);
+        top: 15px;
+        width: calc(100% - 30px);
+        height: 1px;
+    }
+
+    .qci-step2-side-item:last-child .qci-step2-side-line {
+        display: none !important;
+    }
+
+    .qci-step2-side-number {
+        left: calc(50% - 15px);
+        top: 0;
+    }
+
+    .qci-step2-side-content {
+        padding: 0;
+    }
+
+    .qci-step2-side-content strong {
+        font-size: 8px;
+        line-height: 1.35;
+    }
+
+    .qci-step2-side-content p {
+        display: none;
+    }
+
+
+    /* HELP */
+
+    .qci-step2-help {
+        margin-top: 20px;
+    }
+
+    .qci-step2-note {
+        margin-top: 15px;
+    }
+
+
+    /* CONTENT */
+
+    .qci-step2-content {
+        padding: 20px 12px 25px;
+    }
+
+
+    /* TOP STEPPER */
+
+    .qci-step2-top-stepper {
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .qci-step2-top-item {
+        min-width: 105px;
+    }
+
+    .qci-step2-top-text strong {
+        font-size: 9px;
+    }
+
+    .qci-step2-top-text span {
+        font-size: 8px;
+    }
+
+
+    /* FORM */
+
+    .qci-step2-fields {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 18px 14px 0;
+    }
+
+    .qci-step2-field.qci-step2-full {
+        grid-column: auto;
+    }
+
+    .qci-step2-card-heading {
+        padding: 14px;
+    }
+
+    .qci-step2-card-heading h2 {
+        font-size: 15px;
+    }
+
+    .qci-step2-card-heading p {
+        font-size: 9px;
+    }
+
+
+    /* COMMUNICATION */
+
+    .qci-step2-communication {
+        padding: 17px 14px;
+    }
+
+    .qci-step2-radio-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 13px;
+    }
+
+
+    /* SECURITY */
+
+    .qci-step2-security {
+        padding: 14px;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .qci-step2-security p {
+        font-size: 9px;
+    }
+
+
+    /* BUTTONS */
+
+    .qci-step2-actions {
+        gap: 10px;
+    }
+
+    .qci-step2-back,
+    .qci-step2-continue {
+        width: 50%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .qci-step2-page {
+        width: calc(100% - 8px);
+    }
+
+    .qci-step2-sidebar-inner {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .qci-step2-sidebar h1 {
+        font-size: 18px;
+    }
+
+    .qci-step2-content {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .qci-step2-fields {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .qci-step2-phone {
+        gap: 6px;
+    }
+
+    .qci-step2-phone select {
+        width: 72px;
+        flex-basis: 72px;
+    }
+
+    .qci-step2-actions {
+        flex-direction: column-reverse;
+    }
+
+    .qci-step2-back,
+    .qci-step2-continue {
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   REAL SELECT BOX
+========================================================= */
+
+.qci-step2-select {
+    position: relative;
+    width: 100%;
+}
+
+.qci-step2-select select {
+    width: 100%;
+    height: 40px;
+    padding: 0 38px 0 13px;
+    border: 1px solid #d4dce8;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #7f8999;
+    font-family: inherit;
+    font-size: 11px;
+    outline: none;
+    cursor: pointer;
+    appearance: auto;
+}
+
+.qci-step2-select select:focus {
+    border-color: #3975cf;
+    box-shadow: 0 0 0 2px rgba(36, 99, 195, 0.08);
+}
+
+.qci-step2-select select:valid {
+    color: #27354f;
+}
+
+
+/* =========================================================
+   ORGANIZATION PAGE - SMALL ADDITIONS
+   Existing qci-step2 CSS is reused
+========================================================= */
+
+.qci-step2-helper {
+    display: block;
+    margin-top: 5px;
+    color: #68758a;
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+
+/* Real select styling */
+
+.qci-step2-select {
+    width: 100%;
+}
+
+.qci-step2-select select {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #d4dce8;
+    border-radius: 5px;
+    outline: none;
+    background: #fff;
+    color: #69758a;
+    font-family: inherit;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.qci-step2-select select:focus {
+    border-color: #3975cf;
+    box-shadow: 0 0 0 2px rgba(36, 99, 195, .08);
+}
+
+.qci-step2-select select:valid {
+    color: #27354f;
+}
+
+
+/* Organization address textarea */
+
+.qci-step2-textarea textarea {
+    min-height: 60px;
+}
+
+
+/* Date input */
+
+.qci-step2-input input[type="date"] {
+    color: #69758a;
+}
+
+.qci-step2-input input[type="date"]:valid {
+    color: #27354f;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .qci-step2-helper {
+        font-size: 8px;
+    }
+
+    .qci-step2-select select {
+        height: 40px;
+        font-size: 10px;
+    }
+
+}
+
+/* =========================================================
+   STEP 4 - REVIEW / VERIFY
+   Reuses existing QCI Step 2/3 CSS
+========================================================= */
+
+.qci-step4-verification-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 12px 18px;
+    margin-bottom: 18px;
+    border: 1px solid #c8e8d8;
+    border-radius: 5px;
+    background: #f5fcf8;
+}
+
+.qci-step4-verification-icon {
+    width: 23px;
+    height: 23px;
+    flex: 0 0 23px;
+    border-radius: 50%;
+    background: #159650;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.qci-step4-verification-message p {
+    margin: 0;
+    color: #34455f;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   REVIEW CARD
+========================================================= */
+
+.qci-step4-review-card {
+    margin-bottom: 12px;
+    border: 1px solid #dce3ed;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.qci-step4-review-header {
+    min-height: 42px;
+    padding: 9px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9fbfe;
+    border-bottom: 1px solid #dce3ed;
+}
+
+.qci-step4-review-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qci-step4-review-title strong {
+    color: #153a80;
+    font-size: 12px;
+}
+
+.qci-step4-review-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    background: #edf4ff;
+    color: #075dcc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.qci-step4-edit {
+    color: #075dcc;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.qci-step4-edit:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   REVIEW BODY
+========================================================= */
+
+.qci-step4-review-body {
+    padding: 12px 18px;
+}
+
+.qci-step4-review-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.qci-step4-review-grid > div:first-child {
+    padding-right: 22px;
+    border-right: 1px solid #e3e8ef;
+}
+
+.qci-step4-review-grid > div:last-child {
+    padding-left: 22px;
+}
+
+.qci-step4-info-item {
+    display: grid;
+    grid-template-columns: 135px minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
+    margin-bottom: 13px;
+}
+
+.qci-step4-info-item:last-child {
+    margin-bottom: 0;
+}
+
+.qci-step4-label {
+    color: #354563;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+.qci-step4-info-item strong {
+    color: #263654;
+    font-size: 9px;
+    line-height: 1.55;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.qci-step4-gstin-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.qci-step4-gstin-row .qci-step4-info-item {
+    margin-bottom: 0;
+}
+
+.qci-step4-gstin-row .qci-step4-info-item:first-child {
+    padding-right: 20px;
+    border-right: 1px solid #e3e8ef;
+}
+
+.qci-step4-gstin-row .qci-step4-info-item:last-child {
+    padding-left: 20px;
+}
+
+
+/* =========================================================
+   VERIFIED STATUS
+========================================================= */
+
+.qci-step4-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: #e2f6eb;
+    color: #159650;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DECLARATION
+========================================================= */
+
+.qci-step4-declaration {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 13px 18px 4px;
+}
+
+.qci-step4-declaration-check {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    border-radius: 50%;
+    background: #159650;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.qci-step4-declaration p {
+    margin: 0;
+    color: #34445f;
+    font-size: 9px;
+    line-height: 1.65;
+}
+
+.qci-step4-terms {
+    display: inline-block;
+    margin: 0 0 13px 48px;
+    color: #075dcc;
+    font-size: 9px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.qci-step4-submit {
+    width: 225px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .qci-step4-review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qci-step4-review-grid > div:first-child {
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid #e3e8ef;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
+
+    .qci-step4-review-grid > div:last-child {
+        padding-left: 0;
+    }
+
+    .qci-step4-info-item {
+        grid-template-columns: 145px minmax(0, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .qci-step4-verification-message {
+        padding: 11px;
+        gap: 9px;
+    }
+
+    .qci-step4-verification-message p {
+        font-size: 9px;
+    }
+
+    .qci-step4-review-header {
+        padding: 9px 11px;
+    }
+
+    .qci-step4-review-body {
+        padding: 12px;
+    }
+
+    .qci-step4-review-grid > div:first-child {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .qci-step4-info-item {
+        grid-template-columns: 1fr;
+        gap: 3px;
+        margin-bottom: 12px;
+    }
+
+    .qci-step4-label {
+        font-size: 8px;
+        color: #6c7890;
+    }
+
+    .qci-step4-info-item strong {
+        font-size: 9px;
+    }
+
+    .qci-step4-gstin-row {
+        grid-template-columns: 1fr;
+    }
+
+    .qci-step4-gstin-row .qci-step4-info-item:first-child {
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid #e3e8ef;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .qci-step4-gstin-row .qci-step4-info-item:last-child {
+        padding-left: 0;
+    }
+
+    .qci-step4-declaration {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .qci-step4-terms {
+        margin-left: 42px;
+    }
+
+    .qci-step4-submit {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .qci-step4-review-title strong {
+        font-size: 10px;
+    }
+
+    .qci-step4-edit {
+        font-size: 9px;
+    }
+
+}

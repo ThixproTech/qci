@@ -126,7 +126,7 @@
     </div>
 
 
-    <a href="<?= BASE_URL ?>application-queue.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -157,7 +157,7 @@
     </a>
 
 
-    <a href="<?= BASE_URL ?>all-applications.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -175,7 +175,7 @@
     </a>
 
 
-    <a href="<?= BASE_URL ?>search-application.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -193,7 +193,7 @@
     </a>
 
 
-    <a href="<?= BASE_URL ?>application-categories.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -267,7 +267,7 @@
     </a>
 
 
-    <a href="<?= BASE_URL ?>review-status.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -303,7 +303,7 @@
     </div>
 
 
-    <a href="<?= BASE_URL ?>admin-review.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -333,7 +333,7 @@
     </a>
 
 
-    <a href="<?= BASE_URL ?>clarification.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -363,7 +363,7 @@
     </a>
 
 
-    <a href="<?= BASE_URL ?>super-admin-status.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -399,7 +399,7 @@
     </div>
 
 
-    <a href="<?= BASE_URL ?>scoring.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -417,7 +417,7 @@
     </a>
 
 
-    <a href="<?= BASE_URL ?>ranking.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -453,7 +453,7 @@
     </div>
 
 
-    <a href="<?= BASE_URL ?>reports-mis.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -471,7 +471,7 @@
     </a>
 
 
-    <a href="<?= BASE_URL ?>downloads.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -507,7 +507,7 @@
     </div>
 
 
-    <a href="<?= BASE_URL ?>user-management.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -543,7 +543,7 @@
     </a>
 
 
-    <a href="<?= BASE_URL ?>audit-logs.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;
@@ -561,7 +561,7 @@
     </a>
 
 
-    <a href="<?= BASE_URL ?>website-settings.php"
+    <a href="<?= BASE_URL ?>coming.php"
        style="
           height:30px;
           display:flex;

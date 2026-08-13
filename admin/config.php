@@ -1,2 +1,2 @@
 <?php
-define('BASE_URL','/thixpro_updated_website/admin/');
+define('BASE_URL','/qci/admin/');
