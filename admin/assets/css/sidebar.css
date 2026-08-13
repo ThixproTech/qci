@@ -1,0 +1,215 @@
+body{
+    margin:0;
+    background:#f5f7fb;
+    font-family:Inter,sans-serif;
+}
+
+.sidebar{
+
+    position:fixed;
+
+    left:-260px;
+
+    top:0;
+
+    width:260px;
+
+    height:100vh;
+
+    background:#2f3c54;
+
+    transition:.3s;
+
+    z-index:1050;
+
+}
+
+
+.sidebar.show{
+
+    left:0;
+
+}
+
+@media(min-width:992px){
+
+.sidebar{
+
+left:0;
+
+}
+
+}
+.logo{
+    height:70px;
+    display:flex;
+    align-items:center;
+    padding:0 25px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo img{
+    width:40px;
+    margin-right:12px;
+}
+
+.logo span{
+    color:#fff;
+    font-size:22px;
+    font-weight:700;
+}
+
+.menu{
+    list-style:none;
+    padding:15px;
+    margin:0;
+}
+
+.menu-title{
+    color:#95a5c3;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin:22px 15px 10px;
+}
+
+.menu li a{
+    display:flex;
+    align-items:center;
+    padding:13px 18px;
+    color:#dbe4f0;
+    text-decoration:none;
+    border-radius:12px;
+    margin-bottom:6px;
+    transition:.3s;
+}
+
+.menu li a:hover{
+    background:#3556d7;
+    color:#fff;
+}
+
+.menu li a.active{
+    background:#3556d7;
+    color:#fff;
+}
+
+.menu li a i{
+    width:28px;
+    font-size:20px;
+}
+
+.menu li a span{
+    font-size:15px;
+    font-weight:500;
+}
+.sidebar-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:1040;
+
+}
+
+.sidebar-overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+.close-sidebar{
+
+margin-left:auto;
+
+background:none;
+
+border:none;
+
+color:#fff;
+
+font-size:22px;
+
+cursor:pointer;
+
+display:none;
+
+}
+
+@media(max-width:991px){
+
+.close-sidebar{
+
+display:block;
+
+}
+
+}
+.menu-dropdown{
+
+    margin-bottom:6px;
+
+}
+
+.submenu{
+
+    display:none;
+
+    margin-left:20px;
+
+    border-left:2px solid rgba(255,255,255,.1);
+
+}
+
+.menu-dropdown.active .submenu{
+
+    display:block;
+
+}
+
+.submenu-title{
+
+    color:#8fb8ff;
+
+    padding:0px 15px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+/* 
+.submenu a{
+
+    display:block;
+
+    color:#dbe4f0;
+
+    text-decoration:none;
+
+    padding:10px 15px;
+
+    margin:3px 0;
+
+    border-radius:8px;
+
+} */
+
+.submenu a:hover{
+
+    background:#3556d7;
+
+    color:#fff;
+
+}
+
